@@ -1,0 +1,1 @@
+<resources><style name="Theme.AutoDiagAI" parent="Theme.MaterialComponents.DayNight.NoActionBar"><item name="colorPrimary">#6C5CE7</item><item name="android:statusBarColor">#090B10</item><item name="android:navigationBarColor">#090B10</item></style></resources>
