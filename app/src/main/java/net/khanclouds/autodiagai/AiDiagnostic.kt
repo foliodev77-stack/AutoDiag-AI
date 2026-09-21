@@ -1,0 +1,2 @@
+package net.khanclouds.autodiagai
+object AiDiagnostic { fun analyse(s:VehicleSnapshot):String { val f=mutableListOf<String>();if(s.coolant!=null&&s.coolant>110)f+="Température liquide élevée: "+s.coolant+"°C";if(s.voltage!=null&&s.voltage<11.8)f+="Tension batterie faible";if(s.dtcs.isNotEmpty())f+="Codes ECU présents: "+s.dtcs.joinToString();return "AI DIAGNOSIS\nAnalyse basée uniquement sur les données réellement lues.\n\n"+if(f.isEmpty())"Aucune anomalie évidente dans les données disponibles. Cela ne garantit pas l'absence de panne." else f.joinToString("\n• ","• ") }}
